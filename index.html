@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prawin Kumar.C | Front‑End Developer Portfolio</title>
+    <meta name="description"
+          content="Prawin Kumar.C – Front‑End Developer, UI/UX enthusiast. Check out my projects, skills, and get in touch!">
+    <meta name="author" content="Prawin Kumar.C">
+
+    <meta property="og:title" content="Prawin Kumar.C | Front‑End Developer Portfolio">
+    <meta property="og:description"
+          content="Front‑End Developer with a passion for clean code and beautiful UI.">
+    <meta property="og:image" content="assets/img/profile.jpg">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/devicon/devicon-plain.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css"/>
+
+    <style>
+        /* CSS includes the rule to fix the logo size */
+        :root{--font-primary:'Montserrat',sans-serif;--color-bg:#fdfdfd;--color-text:#222;--color-primary:#0066ff;--color-primary-dark:#004fcc;--color-accent:#ff6600;--color-muted:#777;--color-card-bg:#fff;--color-border:#e0e0e0}[data-theme=dark]{--color-bg:#111;--color-text:#eee;--color-primary:#4d9aff;--color-primary-dark:#1e70ff;--color-accent:#ff9944;--color-muted:#bbb;--color-card-bg:#1c1c1c;--color-border:#333}*,::after,::before{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--font-primary);background:var(--color-bg);color:var(--color-text);line-height:1.6;transition:background .3s ease,color .3s ease}img{max-width:100%;height:auto;display:block}a{color:var(--color-primary);text-decoration:none;transition:color .2s}a:hover{color:var(--color-primary-dark)}h1,h2,h3,h4{margin:0 0 .5rem}p{margin:0 0 1rem}ul{list-style:none;padding:0;margin:0}:focus-visible{outline:3px solid var(--color-accent);outline-offset:3px;border-radius:4px}.container{width:min(90%,1200px);margin-inline:auto}section{padding:4rem 0;overflow-x:hidden}.section__title{font-size:2rem;text-align:center;margin-bottom:2rem;position:relative}.section__title::after{content:"";width:4rem;height:3px;background:var(--color-primary);display:block;margin:.5rem auto 0;transform:scaleX(0);transform-origin:center;transition:transform .6s cubic-bezier(.19,1,.22,1)}[data-aos=fade-up].aos-animate .section__title::after,[data-aos=fade-right].aos-animate .section__title::after,[data-aos=fade-left].aos-animate .section__title::after,[data-aos=zoom-in].aos-animate .section__title::after{transform:scaleX(1)}.header{background:var(--color-card-bg);border-bottom:1px solid var(--color-border);position:sticky;top:0;z-index:1000;transition:background .3s ease,border-bottom .3s ease}.header__container{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}.logo{font-size:1.5rem;font-weight:700;color:var(--color-text)}.logo span{color:var(--color-primary)}.nav{display:flex;align-items:center}.nav__list{display:flex;gap:2rem}.nav__link{font-weight:500;padding:.5rem}.nav__link:focus,.nav__link:hover{color:var(--color-primary-dark)}.nav__toggle,.nav__close,.theme-toggle{background:none;border:none;cursor:pointer;color:var(--color-text);padding:.5rem;display:none;z-index:1100}.theme-toggle svg{width:1.5rem;height:1.5rem}@media (max-width:768px){.nav__list{position:fixed;top:0;right:0;height:100vh;width:260px;background:var(--color-card-bg);flex-direction:column;gap:2rem;padding:5rem 2rem;box-shadow:-2px 0 10px rgba(0,0,0,.2);transform:translateX(100%);transition:transform .4s cubic-bezier(.23,1,.32,1)}.nav.open .nav__list{transform:translateX(0)}.nav__toggle,.nav__close,.theme-toggle{display:block}.nav__close{position:absolute;top:1rem;right:1rem;font-size:2rem}}.hero{background:linear-gradient(135deg,var(--color-primary) 0,var(--color-primary-dark) 100%);color:#fff;min-height:80vh;display:flex;align-items:center}.hero__container{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:3rem}.hero__content h1{font-size:clamp(2.2rem,5vw,2.8rem);margin-bottom:.5rem}.highlight{color:var(--color-accent)}.hero__subtitle{font-size:1.2rem;margin-bottom:1.5rem}.btn{display:inline-block;padding:.75rem 1.5rem;border-radius:.4rem;font-weight:600;border:none;cursor:pointer;transition:background .2s,transform .2s}.btn--primary{background:var(--color-accent);color:#fff}.btn--primary:hover{background:#e65c00;transform:translateY(-2px)}.btn--secondary{background:var(--color-primary);color:#fff}.btn--secondary:hover{background:var(--color-primary-dark)}.btn:focus-visible{transform:translateY(-2px)}.hero__image img{border-radius:50%;width:clamp(200px,20vw,250px);border:8px solid rgba(255,255,255,.8);box-shadow:0 10px 30px rgba(0,0,0,.2)}.about__grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start}.about__photo img{border-radius:.5rem;box-shadow:0 5px 20px rgba(0,0,0,.1)}.about__list{margin-top:.5rem}.skills__grid{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center}.skill-card{background:var(--color-card-bg);border:1px solid var(--color-border);border-radius:.5rem;width:120px;text-align:center;padding:1rem;transition:transform .2s,box-shadow .2s}.skill-card:hover{transform:translateY(-5px);box-shadow:0 4px 12px rgba(0,0,0,.15)}.skill-card__icon{width:48px;height:48px;margin-inline:auto;margin-bottom:.5rem}.project-card,.repo-card{background:var(--color-card-bg);border:1px solid var(--color-border);border-radius:.5rem;overflow:hidden;display:flex;flex-direction:column;height:100%}.project-card__img{width:100%;height:200px;object-fit:cover}.project-card__info{padding:1.5rem;flex-grow:1;display:flex;flex-direction:column}.project-card__info h3{margin-bottom:.5rem}.project-card__info p{flex-grow:1;margin-bottom:1.5rem}.repo-card{padding:1.5rem;text-decoration:none;color:inherit}.repo-card h3{font-size:1.25rem;margin-bottom:.5rem;color:var(--color-primary)}.repo-card p{flex-grow:1;margin-bottom:1rem;font-size:.9rem;line-height:1.5}.repo-card__meta{display:flex;justify-content:space-between;font-size:.85rem;color:var(--color-muted)}.repo-card__language-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;background-color:#ccc}.swiper-button-next,.swiper-button-prev{color:var(--color-primary)}.swiper-pagination-bullet-active{background:var(--color-primary)}.contact__form{max-width:600px;margin:0 auto;background:var(--color-card-bg);padding:2rem;border-radius:.5rem;border:1px solid var(--color-border);box-shadow:0 4px 12px rgba(0,0,0,.05)}.form-group{margin-bottom:1.5rem}.form-group label{display:block;margin-bottom:.3rem;font-weight:500}.form-group input,.form-group textarea{width:100%;padding:.75rem;border:1px solid var(--color-border);border-radius:.4rem;background:var(--color-bg);color:var(--color-text);font-family:inherit;font-size:1rem}.form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--color-primary);box-shadow:0 0 0 3px rgba(0,102,255,.15)}.form-status{margin-top:1rem;font-weight:600}.footer{background:var(--color-card-bg);border-top:1px solid var(--color-border);text-align:center;padding:2rem 0}.footer__social{display:flex;gap:1.5rem;justify-content:center;margin-top:.5rem}.footer__social a{line-height:0}
+        
+        /* This rule fixes the logo size */
+        .footer__social img{
+            width:24px;
+            height:24px;
+            transition:transform .2s ease
+        }
+        
+        .footer__social a:hover img{transform:scale(1.2)}[data-theme=dark] .footer__social img{filter:invert(1)}@media (max-width:992px){.hero__container{grid-template-columns:1fr;text-align:center;gap:2rem}.hero__image{margin-top:2rem;margin-inline:auto}}@media (max-width:768px){.about__grid{grid-template-columns:1fr}.about__photo{order:-1;margin-bottom:1rem}}
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="logo">Prawin<span>Kumar.C</span></a>
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="#hero" class="nav__link">Home</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#skills" class="nav__link">Skills</a></li>
+                    <li><a href="#projects" class="nav__link">Projects</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+                <button class="nav__close" id="nav-close" aria-label="Close menu">&times;</button>
+            </nav>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-controls="nav" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <svg id="theme-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="container hero__container" data-aos="fade-up">
+                <div class="hero__content">
+                    <h1>Hello, I’m <span class="highlight">Prawin Kumar.C</span></h1>
+                    <p class="hero__subtitle">Front‑End Developer & UI/UX Enthusiast</p>
+                    <a href="#contact" class="btn btn--primary">Hire Me</a>
+                </div>
+                <div class="hero__image">
+                    <img src="assets/img/profile.jpg" alt="Prawin Kumar.C portrait 1">
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container" data-aos="fade-right">
+                <h2 class="section__title">About Me</h2>
+                <div class="about__grid">
+                    <div class="about__text">
+                        <p>
+                            I’m a passionate front‑end developer with 4+ years of experience
+                            building responsive, accessible, and performant web applications.
+                            I love turning ideas into clean, pixel‑perfect code.
+                        </p>
+                        <ul class="about__list">
+                            <li>🔹 JavaScript (ES6+), TypeScript</li>
+                            <li>🔹 React, Vue, Svelte</li>
+                            <li>🔹 CSS‑in‑JS, Tailwind, SCSS</li>
+                            <li>🔹 REST & GraphQL APIs</li>
+                        </ul>
+                    </div>
+                    <div class="about__photo">
+                        <img src="assets/img/profile_2.jpg" alt="Prawin Kumar.C portrait 2">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="container" data-aos="fade-left">
+                <h2 class="section__title">My Skills</h2>
+                <div class="skills__grid">
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="skill-card__icon"><h3 class="skill-card__title">HTML5</h3></div>
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="skill-card__icon"><h3 class="skill-card__title">CSS3 / SCSS</h3></div>
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-card__icon"><h3 class="skill-card__title">JavaScript</h3></div>
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="skill-card__icon"><h3 class="skill-card__title">React</h3></div>
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-card__icon"><h3 class="skill-card__title">Python</h3></div>
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skill-card__icon"><h3 class="skill-card__title">Java</h3></div>
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="skill-card__icon"><h3 class="skill-card__title">C++</h3></div>
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="skill-card__icon"><h3 class="skill-card__title">C</h3></div>
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="skill-card__icon"><h3 class="skill-card__title">VS Code</h3></div>
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="skill-card__icon"><h3 class="skill-card__title">Git</h3></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="container" data-aos="zoom-in">
+                <h2 class="section__title">Selected Projects</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><div class="project-card"><img src="assets/img/project1.jpg" alt="Project 1 screenshot" class="project-card__img"><div class="project-card__info"><h3>Project One</h3><p>Description of project one.</p><div><a href="https://github.com/PrawinKumar514" rel="noopener noreferrer" target="_blank" class="btn btn--secondary">GitHub</a><a href="#" rel="noopener noreferrer" target="_blank" class="btn btn--secondary">Live Demo</a></div></div></div></div>
+                        <div class="swiper-slide"><div class="project-card"><img src="assets/img/project2.jpg" alt="Project 2 screenshot" class="project-card__img"><div class="project-card__info"><h3>Project Two</h3><p>Description of project two.</p><div><a href="https://github.com/PrawinKumar514" rel="noopener noreferrer" target="_blank" class="btn btn--secondary">GitHub</a><a href="#" rel="noopener noreferrer" target="_blank" class="btn btn--secondary">Live Demo</a></div></div></div></div>
+                    </div>
+                    <div class="swiper-button-next"></div><div class="swiper-button-prev"></div><div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="github-showcase" id="github-showcase">
+            <div class="container" data-aos="fade-up">
+                <h2 class="section__title">Latest on GitHub</h2>
+                <div class="github-showcase__grid" id="github-repos-container"><p>Loading repositories...</p></div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container" data-aos="fade-up">
+                <h2 class="section__title">Get In Touch</h2>
+                <form id="contact-form" class="contact__form" novalidate>
+                    <div class="form-group"><label for="name">Name *</label><input type="text" id="name" name="name" required></div>
+                    <div class="form-group"><label for="email">Email *</label><input type="email" id="email" name="email" required></div>
+                    <div class="form-group"><label for="message">Message *</label><textarea id="message" name="message" rows="5" required></textarea></div>
+                    <button type="submit" class="btn btn--primary">Send Message</button>
+                    <p class="form-status" id="form-status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <p>&copy; <span id="year"></span> Prawin Kumar.C. All rights reserved.</p>
+            <ul class="footer__social">
+                <li>
+                    <a href="https://github.com/PrawinKumar514" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/prawin-kumar-974a2334b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="LinkedIn">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/_mr_black_soul_official_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <img src="assets/img/instagram logo.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/Prawinkumar514" target="_blank" rel="noopener noreferrer" aria-label="X">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="X">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+    <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js" defer></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({ duration: 1000, once: true });
+            const swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1, spaceBetween: 30, loop: true,
+                pagination: { el: ".swiper-pagination", clickable: true },
+                navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+                breakpoints: { 768: { slidesPerView: 2, spaceBetween: 40 } },
+            });
+            document.getElementById("year").textContent = new Date().getFullYear();
+            const nav = document.getElementById("nav"), navToggle = document.getElementById("nav-toggle"), navClose = document.getElementById("nav-close");
+            navToggle && navToggle.addEventListener("click", () => { nav.classList.add("open"), navToggle.setAttribute("aria-expanded", "true") });
+            navClose && navClose.addEventListener("click", () => { nav.classList.remove("open"), navToggle.setAttribute("aria-expanded", "false") });
+            const themeToggle = document.getElementById("theme-toggle"), themeIcon = document.getElementById("theme-icon"),
+                sunIcon = '<circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>',
+                moonIcon = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>';
+            const applyTheme = (theme) => {
+                document.documentElement.setAttribute("data-theme", theme);
+                themeIcon.innerHTML = "dark" === theme ? sunIcon : moonIcon;
+            };
+            const currentTheme = localStorage.getItem("theme") || "light";
+            applyTheme(currentTheme);
+            themeToggle.addEventListener("click", () => {
+                const newTheme = "dark" === document.documentElement.getAttribute("data-theme") ? "light" : "dark";
+                localStorage.setItem("theme", newTheme);
+                applyTheme(newTheme);
+            });
+            fetchGitHubRepos();
+        });
+
+        async function fetchGitHubRepos() {
+            const username = 'PrawinKumar514';
+            const container = document.getElementById('github-repos-container');
+            const apiUrl = `https://api.github.com/users/${username}/repos?sort=updated&per_page=6&type=owner`;
+            const langColors = { JavaScript: "#f1e05a", HTML: "#e34c26", CSS: "#563d7c", TypeScript: "#3178c6", Python: "#3572A5", SCSS: "#c6538c", Java: "#b07219", Shell: "#89e051", Vue: "#4FC08D", Go: "#00ADD8", "C++": "#f34b7d", C: "#555555" };
+            try {
+                const response = await fetch(apiUrl);
+                if (!response.ok) throw new Error(`API error: ${response.status}`);
+                const repos = await response.json();
+                container.innerHTML = "";
+                if (repos.length === 0) {
+                    container.innerHTML = "<p>No public repositories found for this user.</p>";
+                    return;
+                }
+                repos.forEach(repo => {
+                    const repoCard = document.createElement('a');
+                    repoCard.href = repo.html_url;
+                    repoCard.target = "_blank";
+                    repoCard.rel = "noopener noreferrer";
+                    repoCard.className = "repo-card";
+                    const description = repo.description || "No description provided.";
+                    const langColor = langColors[repo.language] || "#ccc";
+                    repoCard.innerHTML = `<h3>${repo.name}</h3><p>${description.substring(0, 100)}${description.length > 100 ? "..." : ""}</p><div class="repo-card__meta"><span><span class="repo-card__language-dot" style="background-color: ${langColor};"></span> ${repo.language || "N/A"}</span><span>⭐ ${repo.stargazers_count}</span></div>`;
+                    container.appendChild(repoCard);
+                })
+            } catch (error) {
+                console.error("Failed to fetch GitHub repos:", error);
+                container.innerHTML = "<p>Could not load GitHub projects at this time.</p>";
+            }
+        }
+    </script>
+</body>
+</html>
